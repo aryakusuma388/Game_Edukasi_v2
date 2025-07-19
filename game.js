@@ -222,9 +222,11 @@ function checkFinish() {
       setLevel(currentLevel + 1);
     } else {
       alert("🎉 Selamat kamu lulus dari Sekolah 🎉");
+      setLevel(1);
     }
   } else {
     alert("Kamu kemana aja, Bolos yahh!");
+    setTimeout(() => resetGame(), 500);
   }
 }
 
