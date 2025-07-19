@@ -181,8 +181,7 @@ function getObstacleTypeAt(x, y) {
 
 
 function runCommands() {
-  const stepSound = document.getElementById("stepSound");
-
+  
   let i = 0;
   
   const interval = setInterval(() => {
@@ -206,8 +205,9 @@ function runCommands() {
        robotY = nextY;
 
        // 🔊 Mainkan suara langkah
-       const stepClone = stepSound.cloneNode();
-       stepClone.play();
+       const stepSound = new Audio("sound/step.mp3");
+       stepSound.volume = 0.5; // opsional
+       stepSound.play();
     }
     const type = getObstacleTypeAt(nextX, nextY);
     if (type === 3) {
