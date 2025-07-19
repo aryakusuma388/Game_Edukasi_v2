@@ -1,0 +1,70 @@
+/* HEADER LOGO */
+.main-header {
+  width: 100%;
+  padding: 10px 0;
+  text-align: center;
+  background-color: #0D5EA6; /* latar belakang gelap agar logo lebih kontras */
+}
+
+.header-logo {
+  max-width: 70%;
+  max-height: 100px;
+}
+
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #91C8E4;
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  border: 2px solid black;
+  background-color: #F3E9DC; 
+  margin: 10px auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+#controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+}
+
+#controls button {
+  margin: 2px;
+  padding: 1px 4px;
+  font-size: 24px;
+}
+
+#commandList {
+  font-weight: bold;
+  color: rgb(4, 4, 234);
+  margin-top: 10px;
+}
+
+/* Media Query untuk Mobile */
+@media (max-width: 600px) {
+  canvas {
+    width: 90vw;
+    height: auto;
+  }
+
+  #controls {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #controls button {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  #commandList {
+    font-size: 14px;
+  }
+}
