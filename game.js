@@ -179,10 +179,12 @@ function getObstacleTypeAt(x, y) {
   return obs ? obs.type : 0;
 }
 
-const stepSound = document.getElementById("stepSound");
 
 function runCommands() {
+  const stepSound = document.getElementById("stepSound");
+
   let i = 0;
+  
   const interval = setInterval(() => {
     if (i >= commands.length) {
       clearInterval(interval);
