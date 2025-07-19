@@ -79,9 +79,10 @@ canvas {
   #controls {
     display: flex;
     flex-direction: row; /* Ganti ke 'row' untuk horizontal */
-    flex-wrap: wrap;     /* Agar tombol tidak keluar layar */
     justify-content: center;
-    gap: 8px; 
+    align-items: flex-start;
+    gap: 40px; /* Jarak antara dua kolom */
+    margin-top: 20px; 
   }
 
   #controls button {
