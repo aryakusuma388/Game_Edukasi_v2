@@ -221,8 +221,11 @@ function checkFinish() {
     if (currentLevel < Object.keys(levels).length) {
       setLevel(currentLevel + 1);
     } else {
-      alert("🎉 Selamat kamu lulus dari Sekolah 🎉");
-      setLevel(1);
+      setTimeout(() => {
+        window.location.href = "end.html";
+      }, 500);
+      //alert("🎉 Selamat kamu lulus dari Sekolah 🎉");
+      //setLevel(1);
     }
   } else {
     alert("Kamu kemana aja, Bolos yahh!");

@@ -8,20 +8,19 @@
 }
 .header-box {
   width: 600px;
-  background-color: #0D5EA6; /* warna background hanya untuk area 600px */
-  padding: 10px;
+  background-color: #1e97d7; /* warna background hanya untuk area 600px */
   text-align: center;
   border-radius: 10px; /* opsional */
 }
 .header-logo {
   max-width: 70%;
-  max-height: 100px;
+  max-height: 200px;
 }
 
 body {
   font-family: sans-serif;
   text-align: center;
-  background-color: #91C8E4;
+  background-color: #a7e2ff;
   margin: 0;
   padding: 0;
 }
@@ -54,6 +53,22 @@ canvas {
   margin-top: 10px;
 }
 
+.main-footer {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* horizontal center */ 
+  padding: 5px 0;
+  background-color: transparent; /* latar belakang gelap agar logo lebih kontras */
+}
+.footer-box {
+  width: 600px;
+  background-color: #0D5EA6; /* warna background hanya untuk area 600px */
+  padding: 2px;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 10px; /* opsional */
+}
 /* Media Query untuk Mobile */
 @media (max-width: 600px) {
   canvas {
