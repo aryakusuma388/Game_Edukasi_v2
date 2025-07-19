@@ -77,8 +77,11 @@ canvas {
   }
 
   #controls {
-    flex-direction: column;
-    align-items: center;
+    display: flex;
+    flex-direction: row; /* Ganti ke 'row' untuk horizontal */
+    flex-wrap: wrap;     /* Agar tombol tidak keluar layar */
+    justify-content: center;
+    gap: 8px; 
   }
 
   #controls button {
