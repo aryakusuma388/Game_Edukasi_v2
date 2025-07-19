@@ -179,6 +179,8 @@ function getObstacleTypeAt(x, y) {
   return obs ? obs.type : 0;
 }
 
+const stepSound = document.getElementById("stepSound");
+
 function runCommands() {
   let i = 0;
   const interval = setInterval(() => {
@@ -198,8 +200,12 @@ function runCommands() {
     else if (cmd === "DOWN") nextY += gridSize;
 
     if (isWalkable(nextX, nextY)) {
-      robotX = nextX;
-      robotY = nextY;
+       robotX = nextX;
+       robotY = nextY;
+
+       // 🔊 Mainkan suara langkah
+       stepSound.currentTime = 0;
+       stepSound.play();
     }
     const type = getObstacleTypeAt(nextX, nextY);
     if (type === 3) {
