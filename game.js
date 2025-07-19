@@ -206,8 +206,8 @@ function runCommands() {
        robotY = nextY;
 
        // 🔊 Mainkan suara langkah
-       stepSound.currentTime = 0;
-       stepSound.play();
+       const stepClone = stepSound.cloneNode();
+       stepClone.play();
     }
     const type = getObstacleTypeAt(nextX, nextY);
     if (type === 3) {
