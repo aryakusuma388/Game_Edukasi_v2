@@ -53,22 +53,7 @@ canvas {
   color: rgb(4, 4, 234);
   margin-top: 10px;
 }
-.main-footer {
-  width: 100%;
-  display: flex;
-  justify-content: center; /* horizontal center */ 
-  padding: 5px 0;
-  background-color: transparent; /* latar belakang gelap agar logo lebih kontras */
-}
-.footer-box {
-  width: 600px;
-  background-color: #0D5EA6; /* warna background hanya untuk area 600px */
-  padding: 2px;
-  color: #fff;
-  font-size: 12px;
-  text-align: center;
-  border-radius: 10px; /* opsional */
-}
+
 /* Media Query untuk Mobile */
 @media (max-width: 600px) {
   canvas {
