@@ -101,11 +101,15 @@ const levels = {
   },
   4: {
     grid: 10,
-    start: [3, 3],
-    goal: [7, 0],
+    start: [0, 0],
+    goal: [9, 9],
     obstacles: [
-      { x: 3, y: 2, type: 1 }, { x: 4, y: 2, type: 2 },
-      { x: 5, y: 2, type: 2 }, { x: 6, y: 2, type: 1 }
+      { x: 1, y: 1, type: 1 }, { x: 2, y: 1, type: 1 }, { x: 3, y: 1, type: 1 },{ x: 5, y: 1, type: 1 },{ x: 6, y: 1, type: 1 },{ x: 7, y: 1, type: 1 },{ x: 9, y: 1, type: 1 },
+      { x: 0, y: 3, type: 1 },{ x: 1, y: 3, type: 1 }, { x: 2, y: 3, type: 1 }, { x: 4, y: 3, type: 1 },{ x: 5, y: 3, type: 1 },{ x: 6, y: 3, type: 1 },{ x: 8, y: 3, type: 1 },{ x: 9, y: 3, type: 1 },
+      { x: 0, y: 5, type: 1 },{ x: 1, y: 5, type: 1 }, { x: 3, y: 5, type: 2 }, { x: 4, y: 5, type: 2 },{ x: 5, y: 5, type: 2 },{ x: 7, y: 5, type: 1 },{ x: 8, y: 5, type: 1 },{ x: 9, y: 5, type: 1 },
+      { x: 0, y: 7, type: 1 },{ x: 2, y: 7, type: 1 }, { x: 3, y: 7, type: 1 }, { x: 4, y: 7, type: 1 },{ x: 6, y: 7, type: 1 },{ x: 7, y: 7, type: 2 },{ x: 8, y: 7, type: 2 },
+      { x: 0, y: 8, type: 2 },{ x: 2, y: 9, type: 2 }, { x: 4, y: 8, type: 2 }, { x: 6, y: 9, type: 1 },{ x: 8, y: 8, type: 2 },
+      { x: 2, y: 2, type: 3 },{ x: 8, y: 2, type: 3 }, { x: 5, y: 4, type: 3 }, { x: 2, y: 6, type: 3 },{ x: 8, y: 6, type: 3 },{ x: 3, y: 9, type: 3 }, //preman 
     ]
   }
 };
