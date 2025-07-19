@@ -87,10 +87,10 @@ canvas {
 
   #controls button {
     padding: 8px 12px;
-    font-size: 16px;
+    font-size: 24px;
   }
 
   #commandList {
-    font-size: 10px;
+    font-size: 8px;
   }
 }
